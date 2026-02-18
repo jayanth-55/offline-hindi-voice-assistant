@@ -5,12 +5,20 @@ It captures voice from a USB microphone, recognizes Hindi speech locally, detect
 
 ## System Architecture
 
-Microphone → Vosk ASR → Intent Recognition → Piper TTS → Speaker
+Microphone → Vosk ASR → Intent Detection → Command Execution → Piper TTS → Speaker
+
+## Project Overview
+This project implements a fully offline Hindi voice assistant on Raspberry Pi using Vosk for speech recognition and Piper for text-to-speech. The system processes audio locally with response time under 2 seconds.
+
 
 ## Performance
--Response time: ~1.5 second
--Offline operation: Yes
--Commands supported: 10–15 Hindi commands
+- Average response time: 0.6–1.2 seconds  
+- Commands supported: 12  
+- Platform: Raspberry Pi 4  
+- Offline operation: Yes
+
+## Demo Link 
+https://drive.google.com/file/d/1spGBemikwdPYMklERlIAloKYTqv3Vz0c/view?usp=sharing
 
 ## Features
 - Offline Hindi speech recognition (Vosk)
@@ -80,8 +88,10 @@ python test_mic.py
 - धन्यवाद
 - तुम कौन ह
 
-## Project Overview
-This project implements a fully offline Hindi voice assistant on Raspberry Pi using Vosk for speech recognition and Piper for text-to-speech. The system processes audio locally with response time under 2 seconds.
-
-## Project Goal
-Build a low-latency offline Hindi voice assistant running on ARM hardware.
+## Challenges 
+- Raspberry pi OS installation and Configuration
+- Microphone Configuration and Audio Device Errors
+- Speaker Output and ALSA Mixer Configuration
+- Integration of Offline Speech Recognition
+- Latency Optimization
+- Continuous Listening and CPU Temperature
