@@ -13,7 +13,7 @@ This project implements a fully offline Hindi voice assistant on Raspberry Pi us
 
 ## Performance
 - Average response time: 0.6–1.2 seconds  
-- Commands supported: 12  
+- Commands Given: 10-15  
 - Platform: Raspberry Pi 4  
 - Offline operation: Yes
 
